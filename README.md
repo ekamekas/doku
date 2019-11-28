@@ -3,8 +3,8 @@ Android library to create document from template
 
 #### [View Releases and Changelogs](https://github.com/ekamekas/doku/releases)
 
-[![Build Status](https://travis-ci.com/ekamekas/doku.svg?branch=master)](https://travis-ci.com/ekamekas/doku)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/065481e6fea14bd5889edd94745993e6)](https://www.codacy.com/manual/ekamekas/doku?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ekamekas/doku&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/ekamekas/doku.svg?style=svg)](https://circleci.com/gh/ekamekas/doku)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3f0242fc139449538603fac5e52dbfed)](https://www.codacy.com/manual/ekamekas/doku?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ekamekas/doku&amp;utm_campaign=Badge_Grade)
 
 ---
 
