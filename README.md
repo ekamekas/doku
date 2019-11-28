@@ -15,7 +15,7 @@ Android library to create document from template
 ```gradle
 dependencies {
   ...
-  implementation 'id.masekas.doku:0.1.0'
+  implementation 'com.github.ekamekas:doku:v0.1.0'
 }
 ```
 
