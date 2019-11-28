@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Doku - Android Document Templating
+================================================
+(\__/)  page_template.xml
+(='v')  0.1.0 @ 28 Nov 2019
+(")(")
+
+  Mas Eka Setiawan
+  github.com/ekamekas
+================================================
+ -->
+
+<!--Layout for page -->
+<!--Content must be populated programmatically -->
+<LinearLayout
+    android:id="@+id/wrapperPage"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="210mm"
+    android:layout_height="292mm"
+    android:orientation="vertical"
+    android:padding="24px"
+    tools:ignore="InOrMmUsage,PxUsage">
+
+    <LinearLayout
+        android:id="@+id/wrapperPageBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="2px"
+        android:orientation="vertical">
+
+        <!-- Header for each page -->
+        <LinearLayout
+            android:id="@+id/pageHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginBottom="16px"
+            android:orientation="vertical" />
+
+        <!-- Page content -->
+        <LinearLayout
+            android:id="@+id/pageContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pageFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2px"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:textSize="12px"
+        android:textStyle="bold"
+        android:text="Continue Page 1"/>
+
+</LinearLayout>
