@@ -5,6 +5,7 @@ Android library to create document from template
 
 [![CircleCI](https://circleci.com/gh/ekamekas/doku.svg?style=svg)](https://circleci.com/gh/ekamekas/doku)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/3f0242fc139449538603fac5e52dbfed)](https://www.codacy.com/manual/ekamekas/doku?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ekamekas/doku&amp;utm_campaign=Badge_Grade)
+[![Release](https://jitpack.io/v/ekamekas/doku.svg)](https://jitpack.io/#ekamekas/doku)
 
 ---
 
@@ -12,10 +13,23 @@ Android library to create document from template
 
 ## Instalation
 
+Add jitpack repository in your root build.gradle
+
+```gradle
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+Add dependency to your app
+
 ```gradle
 dependencies {
   ...
-  implementation 'com.github.ekamekas:doku:0.1.0'
+  implementation 'com.github.ekamekas:doku:${latest}'
 }
 ```
 
@@ -62,13 +76,13 @@ Page content template. Library will handle the content so it will not overflow t
 
 ```kotlin
 Doku.builder(context)
-  .setHeader(content: Template)
+  .addContent(content: Template)
   .start()
 ```
 
 ```kotlin
 Doku.builder(context)
-  .setHeader(content: List<Template>)
+  .addContent(content: List<Template>)
   .start()
 ```
 
@@ -79,7 +93,7 @@ Footer template of document. Footer will be draw for each pages.
 
 ```kotlin
 Doku.builder(context)
-  .setHeader(footer: Template)
+  .setFooter(footer: Template)
   .start()
 ```
 
